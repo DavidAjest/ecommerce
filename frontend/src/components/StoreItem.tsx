@@ -28,16 +28,6 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemPorps) {
           13$
         </span>
         <div className="flex flex-row justify-center mt-auto ">
-          {/* <button className="cursor-pointer  bg-green-500 size-10 rounded-lg">
-            -1
-          </button>
-          <span className="cursor-pointer ml-5 bg-green-500 size-10 rounded-lg">
-            0
-          </span>
-          <button className="cursor-pointer ml-5 bg-green-500 size-10 rounded-lg">
-            +1
-          </button> */}
-
           {quantity === 0 ? (
             <button
               onClick={() => handleAddToCart()}
