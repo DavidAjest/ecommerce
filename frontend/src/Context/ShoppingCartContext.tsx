@@ -29,6 +29,10 @@ const ShoppingCartReducer = (
   switch (action.type) {
     case "ADD_ITEM":
       return { cartItems: [...state.cartItems, action.payload] };
+    case "REMOVE_ITEM":
+      return { cartItems: [...state.cartItems, action.payload] };
+    case "GET_ITEM":
+      return { cartItems: [...state.cartItems, action.payload] };
 
     default:
       return state;
