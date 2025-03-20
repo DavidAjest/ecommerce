@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Book",
+    "price": 10.9,
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+  },
+  {
+    "id": 2,
+    "name": "Computer",
+    "price": 2323,
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+  },
+  {
+    "id": 3,
+    "name": "Banana",
+    "price": 1222.9,
+    "imgUrl": "./ski_item_1.jpg"
+  },
+
+  {
+    "id": 4,
+    "name": "Car",
+    "price": 130.9,
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+  },
+  {
+    "id": 4,
+    "name": "Car",
+    "price": 130.9,
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+  },
+  {
+    "id": 4,
+    "name": "Car",
+    "price": 130.9,
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+  },
+  {
+    "id": 4,
+    "name": "Car",
+    "price": 130.9,
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+  },
+  {
+    "id": 4,
+    "name": "Car",
+    "price": 130.9,
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+  },
+  {
+    "id": 4,
+    "name": "Car",
+    "price": 130.9,
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+  }
+]
