@@ -11,8 +11,8 @@ import { ShoppingCartProvider } from "./Context/ShoppingCartContext";
 function App() {
   return (
     <>
-      <Navbar />
       <ShoppingCartProvider>
+        <Navbar />
         <div className=" container mx-auto mb-4">
           <Routes>
             <Route path="/home" element={<Home />} />
