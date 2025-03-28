@@ -3,55 +3,64 @@
     "id": 1,
     "name": "Book",
     "price": 10.9,
-    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp",
+    "quantity": 0
   },
   {
     "id": 2,
     "name": "Computer",
     "price": 2323,
-    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp",
+    "quantity": 0
   },
   {
     "id": 3,
     "name": "Banana",
     "price": 1222.9,
-    "imgUrl": "./ski_item_1.jpg"
+    "imgUrl": "./ski_item_1.jpg",
+    "quantity": 0
   },
 
   {
     "id": 4,
-    "name": "Car",
+    "name": "Ski",
     "price": 130.9,
-    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp",
+    "quantity": 0
   },
   {
-    "id": 4,
-    "name": "Car",
+    "id": 5,
+    "name": "Shnizel",
     "price": 130.9,
-    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp",
+    "quantity": 0
   },
   {
-    "id": 4,
-    "name": "Car",
+    "id": 6,
+    "name": "Pita",
     "price": 130.9,
-    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp",
+    "quantity": 0
   },
   {
-    "id": 4,
-    "name": "Car",
+    "id": 7,
+    "name": "Homus",
     "price": 130.9,
-    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp",
+    "quantity": 0
   },
   {
-    "id": 4,
-    "name": "Car",
+    "id": 8,
+    "name": "LOl",
     "price": 130.9,
-    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp",
+    "quantity": 0
   },
   {
-    "id": 4,
-    "name": "Car",
+    "id": 9,
+    "name": "PP",
     "price": 130.9,
-    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp"
+    "imgUrl": "https://www.oferavnir.co.il/wp-content/uploads/2023/05/blue.webp",
+    "quantity": 0
   }
 ]
