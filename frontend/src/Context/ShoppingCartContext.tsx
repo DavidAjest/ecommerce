@@ -2,11 +2,11 @@ import { createContext, useReducer, ReactNode } from "react";
 import { CartItem } from "../components/CartItem";
 
 type CartItem = Partial<{
-  id: string | number;
+  _id: string | number;
   name: string;
   price: number;
   quantity: number;
-  imgUrl: string;
+  imageUrl: string;
 }>;
 
 type ShoppingCartState = {
@@ -37,7 +37,7 @@ const ShoppingCartReducer = (
 ) => {
   switch (action.type) {
     case "INCREASE_AMOUNT": {
-      if (!state.cartItems.find((item) => item.id === action.payload.id)) {
+      if (!state.cartItems.find((item) => item._id === action.payload._id)) {
         return {
           ...state,
           cartItems: [...state.cartItems, { ...action.payload, quantity: 1 }],
@@ -45,7 +45,7 @@ const ShoppingCartReducer = (
       }
 
       const newCartItems = state.cartItems.map((item) => {
-        if (item.id === action.payload.id) {
+        if (item._id === action.payload._id) {
           return { ...item, quantity: (item.quantity || 0) + 1 };
         } else {
           return item;
@@ -55,7 +55,8 @@ const ShoppingCartReducer = (
     }
     case "DECREASE_AMOUNT": {
       const newCartItems = state.cartItems.map((item) => {
-        if (item.id === action.payload.id && (item.quantity || 0) > -1) {
+        console.log("this is from context", item);
+        if (item._id === action.payload._id && (item.quantity || 0) > 0) {
           return { ...item, quantity: (item.quantity || 0) - 1 };
         } else {
           return item;
@@ -67,7 +68,7 @@ const ShoppingCartReducer = (
       return {
         ...state,
         cartItems: state.cartItems.filter(
-          (item) => item.id !== action.payload.id
+          (item) => item._id !== action.payload._id
         ),
       };
     case "GET_ITEM":
