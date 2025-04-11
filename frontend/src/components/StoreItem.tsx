@@ -1,18 +1,20 @@
 import useShoppingCart from "../Hooks/useShoppingCart";
+import { Link } from "react-router-dom";
 type StoreItemPorps = {
-  id: number;
+  _id: number;
   name: string;
   price: number;
-  imgUrl: string;
+  imageUrl: string;
   quantity: number;
 };
 
 export function StoreItem({
-  id,
+  _id,
   name,
   price,
-  imgUrl,
+  imageUrl,
 }: // quantity,
+
 StoreItemPorps) {
   const { state, dispatch } = useShoppingCart();
   const { cartItems } = state;
@@ -20,15 +22,15 @@ StoreItemPorps) {
   const handleIncreaseAmount = () => {
     dispatch({
       type: "INCREASE_AMOUNT",
-      payload: { id, name, price, imgUrl },
+      payload: { _id, name, price, imageUrl },
     });
   };
 
   const handleDecreaseAmount = () => {
-    if (cartItems.find((item) => item.id === id && item.quantity === 1)) {
-      dispatch({ type: "REMOVE_ITEM_FROM_CART", payload: { id } });
+    if (cartItems.find((item) => item._id === _id && item.quantity === 1)) {
+      dispatch({ type: "REMOVE_ITEM_FROM_CART", payload: { _id } });
     } else {
-      dispatch({ type: "DECREASE_AMOUNT", payload: { id } });
+      dispatch({ type: "DECREASE_AMOUNT", payload: { _id } });
     }
   };
   // console.log("this is inssdsdsdsded REMOVE", cartItems);
@@ -37,13 +39,13 @@ StoreItemPorps) {
       <div className="overflow-hidden">
         <img
           className=" w-130 object-cover hover:scale-110 duration-200"
-          src={imgUrl}
+          src={imageUrl}
           alt=""
         />
       </div>
       <div className="flex flex-col  items-center py-5">
         <span className="text-3xl font-bold py-3 px-3 hover:underline  ">
-          {name}
+          <Link to={`/items/${_id}`}>{name}</Link>
         </span>
         <span className=" text-2xl block text-gray-700 py-3 px-3">
           Recipe By mario
@@ -54,7 +56,7 @@ StoreItemPorps) {
         {/*  */}
         <div className="flex flex-row justify-center mt-auto ">
           {!cartItems.find(
-            (item) => item.id === id && (item.quantity || 0) > 0
+            (item) => item._id === _id && (item.quantity || 0) > 0
           ) ? (
             <button
               onClick={() => handleIncreaseAmount()}
@@ -72,7 +74,7 @@ StoreItemPorps) {
               </button>
               <span className="cursor-pointer ml-5 bg-green-500 size-10 rounded-lg">
                 {cartItems.map((item) => {
-                  if (item.id === id) return item.quantity;
+                  if (item._id === _id) return item.quantity;
                 })}
               </span>
               <button

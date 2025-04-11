@@ -17,6 +17,7 @@ export function ShoppingCart() {
 
   const { state } = useShoppingCart();
   const { cartItems } = state;
+  console.log("this is from the cart");
 
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-10">

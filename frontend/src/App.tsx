@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+
 import "./App.css";
 
 //Componenets
@@ -7,6 +8,7 @@ import { About } from "./pages/About";
 import { Store } from "./pages/Store";
 import { Navbar } from "./components/Navbar";
 import { ShoppingCartProvider } from "./Context/ShoppingCartContext";
+import ItemPage from "./pages/ItemPage";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/store" element={<Store />} />
             <Route path="/about" element={<About />} />
+            <Route path="/items/:id" element={<ItemPage />} />
           </Routes>
         </div>
       </ShoppingCartProvider>

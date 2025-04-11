@@ -8,13 +8,13 @@ export function CartItem() {
   return (
     <>
       {cartItems?.map((item) => (
-        <div key={item.id}>
+        <div key={item._id}>
           <div>
-            <li key={item.id} className="flex py-6">
+            <li key={item._id} className="flex py-6">
               <div className="size-24 shrink-0 overflow-hidden rounded-md border border-gray-200">
                 <img
                   // alt={item.imageAlt}
-                  src={item.imgUrl}
+                  src={item.imageUrl}
                   className="size-full object-cover"
                 />
               </div>
@@ -38,7 +38,7 @@ export function CartItem() {
                       onClick={() =>
                         dispatch({
                           type: "REMOVE_ITEM_FROM_CART",
-                          payload: { id: item.id },
+                          payload: { _id: item._id },
                         })
                       }
                       type="button"
