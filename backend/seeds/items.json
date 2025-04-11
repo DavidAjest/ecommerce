@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Jacket",
+    "price": 10.9,
+    "imageUrl": "https://images.evo.com/imgp/700/250352/1105082/oyuki-kazan-insulator-anorak-jacket-unisex-.jpg",
+    "quantity": 0
+  },
+  {
+    "name": "Skis",
+    "price": 123,
+    "imageUrl": "https://images.evo.com/imgp/700/250664/1159244/season-primer-skis-2025-.jpg",
+    "quantity": 0
+  },
+  {
+    "name": "Helmet",
+    "price": 1222.9,
+    "imageUrl": "https://images.evo.com/imgp/700/93681/712984/smith-vantage-mips-helmet-.jpg",
+    "quantity": 0
+  },
+
+  {
+    "name": "Pants",
+    "price": 10.9,
+    "imageUrl": "https://images.evo.com/imgp/700/203130/831403/the-north-face-freedom-insulated-pants-women-s-.jpg",
+    "quantity": 0
+  },
+  {
+    "name": "Bag",
+    "price": 132.9,
+    "imageUrl": "https://images.evo.com/imgp/700/244661/1065453/evo-m-utility-50l-tote-.jpg",
+    "quantity": 0
+  },
+  {
+    "name": "Boots",
+    "price": 136.9,
+    "imageUrl": "https://images.evo.com/imgp/700/252689/1099023/k2-bfc-100-boa-ski-boots-2025-.jpg",
+    "quantity": 0
+  },
+  {
+    "name": "Gloves",
+    "price": 123.9,
+    "imageUrl": "https://images.evo.com/imgp/700/106314/668968/hestra-army-leather-heli-ski-5-finger-gloves-.jpg",
+    "quantity": 0
+  },
+  {
+    "name": "Goggles",
+    "price": 1660.9,
+    "imageUrl": "https://images.evo.com/imgp/700/251980/1121335/oakley-line-miner-pro-l-goggles-.jpg",
+    "quantity": 0
+  },
+  {
+    "name": "Ski Poles",
+    "price": 1230.9,
+    "imageUrl": "https://images.evo.com/imgp/700/183612/1087823/evo-enduro-ski-poles-2025-.jpg",
+    "quantity": 0
+  }
+]
